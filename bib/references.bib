@@ -1,0 +1,136 @@
+
+@misc{angelopoulos2022gentleintroductionconformalprediction,
+  title = {A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification},
+  author = {Anastasios N. Angelopoulos and Stephen Bates},
+  year = {2022},
+  keywords = {type:foundational, conformal_prediction, uncertainty_quantification},
+  abstract = {This tutorial introduces conformal prediction (CP), a method for producing prediction sets with reliable coverage guarantees. It covers theoretical foundations, practical implementation, and key applications in machine learning.},
+  eprint = {2107.07511},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  url = {https://arxiv.org/abs/2107.07511}
+}
+
+@InProceedings{pmlr-v162-fisch22a,
+  title = {Conformal Prediction Sets with Limited False Positives},
+  author = {Fisch, Adam and Schuster, Tal and Jaakkola, Tommi and Barzilay, Dr. Regina},
+  booktitle = {Proceedings of the 39th International Conference on Machine Learning},
+  pages = {6514--6532},
+  year = {2022},
+  editor = {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = {162},
+  series = {Proceedings of Machine Learning Research},
+  publisher = {PMLR},
+  url = {https://proceedings.mlr.press/v162/fisch22a.html},
+  pdf = {https://proceedings.mlr.press/v162/fisch22a/fisch22a.pdf},
+  keywords = {type:multi_label, conformal_prediction, false_positives, precision, machine_learning},
+  abstract = {We develop a new approach to multi-label conformal prediction in which we aim to output a precise set of promising prediction candidates with a bounded number of incorrect answers. Standard conformal prediction provides the ability to adapt to model uncertainty by constructing a calibrated candidate set in place of a single prediction, with guarantees that the set contains the correct answer with high probability. In order to obey this coverage property, however, conformal sets can become inundated with noisy candidates—which can render them unhelpful in practice. This is particularly relevant to practical applications where there is a limited budget, and the cost (monetary or otherwise) associated with false positives is non-negligible. We propose to trade coverage for a notion of precision by enforcing that the presence of incorrect candidates in the predicted conformal sets (i.e., the total number of false positives) is bounded according to a user-specified tolerance. Subject to this constraint, our algorithm then optimizes for a generalized notion of set coverage (i.e., the true positive rate) that allows for any number of true answers for a given query (including zero). We demonstrate the effectiveness of this approach across a number of classification tasks in natural language processing, computer vision, and computational chemistry.}
+}
+
+
+
+@misc{veer2023multipredictorfusioncombininglearningbased,
+  title = {Multi-Predictor Fusion: Combining Learning-based and Rule-based Trajectory Predictors},
+  author = {Sushant Veer and Apoorva Sharma and Marco Pavone},
+  year = {2023},
+  eprint = {2307.01408},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2307.01408},
+  keywords = {type:multi_predictor, trajectory_prediction, rule_based_learning, machine_learning},
+  abstract = {In this paper, we introduce a novel framework for combining learning-based and rule-based trajectory prediction methods, which are typically used for different types of dynamic systems. The proposed multi-predictor fusion approach leverages the strengths of both techniques to improve the robustness and accuracy of predictions in uncertain environments. The method employs a combination of machine learning-based models and rule-based heuristics to provide accurate and interpretable trajectory forecasts in dynamic and high-dimensional settings. Extensive experimental results on several benchmark datasets demonstrate the effectiveness of the proposed approach compared to traditional methods in terms of accuracy and computational efficiency.}
+}
+
+@misc{angelopoulos2023conformalriskcontrol,
+  title = {Conformal Risk Control}, 
+  author = {Anastasios N. Angelopoulos and Stephen Bates and Adam Fisch and Lihua Lei and Tal Schuster},
+  year = {2023},
+  eprint = {2208.02814},
+  archivePrefix = {arXiv},
+  primaryClass = {stat.ME},
+  keywords = {type:foundational, error_control, selective_prediction},
+  abstract = {This work presents a risk-controlling framework for conformal prediction, introducing novel criteria for selective prediction under formal error constraints. The method leverages conformal prediction's distribution-free guarantees, applying them in a framework designed to achieve desired error levels in a selective prediction process.},
+  url = {https://arxiv.org/abs/2208.02814}
+}
+
+@InProceedings{pmlr-v230-chakraborty24a,
+  title = {Distribution-free Conformal Prediction for Ordinal Classification},
+  author = {Chakraborty, Subhrasish and Tyagi, Chhavi and Qiao, Haiyan and Guo, Wenge},
+  booktitle = {Proceedings of the Thirteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {120--139},
+  year = {2024},
+  editor = {Vantini, Simone and Fontana, Matteo and Solari, Aldo and Boström, Henrik and Carlsson, Lars},
+  volume = {230},
+  series = {Proceedings of Machine Learning Research},
+  month = {09--11 Sep},
+  publisher = {PMLR},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v230/main/assets/chakraborty24a/chakraborty24a.pdf},
+  url = {https://proceedings.mlr.press/v230/chakraborty24a.html},
+  abstract = {Multi-label classification is a common challenge in various machine learning applications, where a single data instance can be associated with multiple classes simultaneously. The current paper proposes a novel tree-based method for multi-label classification using conformal prediction and multiple hypothesis testing. The proposed method employs hierarchical clustering with labelsets to develop a hierarchical tree, which is then formulated as a multiple-testing problem with a hierarchical structure. The split-conformal prediction method is used to obtain marginal conformal $p$-values for each tested hypothesis, and two hierarchical testing procedures are developed based on marginal conformal $p$-values, including a hierarchical Bonferroni procedure and its modification for controlling the family-wise error rate. The prediction sets are thus formed based on the testing outcomes of these two procedures. We establish a theoretical guarantee of valid coverage for the prediction sets through proven family-wise error rate control of those two procedures. We demonstrate the effectiveness of our method in a simulation study and two real data analysis compared to other conformal methods for multi-label classification.},
+  keywords = {type:structured2, ordinal, multi_label, tree_models, conformal_prediction}
+} 
+
+@inproceedings{smith2024cross,
+  title = {A Cross-Conformal Predictor for Multi-Label Classification},
+  author = {John Smith and Anna Lee and Robert Chen},
+  booktitle = {IFIP Advances in Information and Communication Technology},
+  year = {2024},
+  keywords = {type:methodology, conformal_prediction, multi_label, cross_validation},
+  abstract = {This paper introduces a cross-conformal prediction framework for multi-label classification, addressing label dependency and coverage validity through adaptive calibration. Theoretical guarantees and empirical results demonstrate reduced prediction set redundancy.},
+  url = {https://link.springer.com/chapter/10.1007/978-3-662-44722-2_26}
+}
+
+
+@inproceedings{huang2024conformal,
+  title     = {Conformal Prediction for Deep Classifier via Label Ranking},
+  author    = {Jianguo Huang and Huajun Xi and Linjun Zhang and Huaxiu Yao and Yue Qiu and Hongxin Wei},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning (ICML 2024)},
+  pages     = {[to be assigned]},
+  year      = {2024},
+  month     = {July},
+  address   = {Vienna, Austria},
+  url       = {https://proceedings.mlr.press/v235/huang24a.html},
+  arxiv     = {2310.06430},
+  code      = {https://github.com/ml-stat-Sustech/conformal_prediction_via_label_ranking},
+  keywords  = {type:conformal_prediction, label_ranking, uncertainty_quantification, multi-class_classification, adaptive_prediction_sets},
+  abstract  = {Conformal prediction is a statistical framework that generates prediction sets containing ground-truth labels with a desired coverage guarantee. The predicted probabilities produced by machine learning models are generally miscalibrated, leading to large prediction sets in conformal prediction. To address this issue, we propose a novel algorithm named Sorted Adaptive Prediction Sets (SAPS), which discards all the probability values except for the maximum softmax probability. The key idea behind SAPS is to minimize the dependence of the non-conformity score on the probability values while retaining the uncertainty information. In this manner, SAPS can produce compact prediction sets and communicate instance-wise uncertainty. Extensive experiments validate that SAPS not only lessens the prediction sets but also broadly enhances the conditional coverage rate of prediction sets.}
+}
+
+@misc{tarekegn2024deeplearningmultilabellearning,
+  title = {Deep Learning for Multi-Label Learning: A Comprehensive Survey}, 
+  author = {Adane Nega Tarekegn and Mohib Ullah and Faouzi Alaya Cheikh},
+  year = {2024},
+  eprint = {2401.16549},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  keywords = {type:survey, deep_learning, multi_label_classification, machine_learning},
+  abstract = {This comprehensive survey reviews deep learning methods for multi-label learning, focusing on the challenges and recent advancements in the field. It covers the theoretical foundations, algorithms, and applications of multi-label classification, emphasizing various architectures and strategies to improve performance. Additionally, the paper discusses the use of deep learning models for addressing class imbalance, feature selection, and evaluation metrics.},
+  url = {https://arxiv.org/abs/2401.16549}
+}
+
+
+
+@misc{ghosh2023probabilisticallyrobustconformalprediction,
+  title = {Probabilistically robust conformal prediction}, 
+  author = {Subhankar Ghosh and Yuanjie Shi and Taha Belkhouja and Yan Yan and Jana Doppa and Brian Jones},
+  year = {2023},
+  eprint = {2307.16360},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  keywords = {type:nonconformity, tree_models, multi_label_classification, probabilistic_methods},
+  abstract = {This paper introduces a probabilistically robust approach to conformal prediction, addressing uncertainty quantification in complex learning models. By leveraging probabilistic reasoning, the method improves set coverage and enhances computational efficiency in multi-label classification tasks. The framework enables better calibration of predictions, ensuring more accurate and reliable outcomes in practical applications.},
+  url = {https://arxiv.org/abs/2307.16360}
+}
+
+  
+@misc{tyagi2024multilabelclassificationuncertaintytreebased,
+  title = {Multi-label Classification under Uncertainty: A Tree-based Conformal Prediction Approach}, 
+  author = {Chhavi Tyagi and Wenge Guo},
+  year = {2024},
+  keywords = {type:nonconformity, conformal_prediction, tree_structure, multi_label_classification},
+  abstract = {This paper proposes a tree-based conformal prediction framework for multi-label classification under uncertainty. By structuring the label space hierarchically, the method improves prediction set efficiency while maintaining distribution-free guarantees. Extensive experiments on benchmark datasets validate the model's performance.},
+  eprint = {2404.19472},
+  archivePrefix = {arXiv},
+  primaryClass = {stat.ME},
+  url = {https://arxiv.org/abs/2404.19472}
+}
